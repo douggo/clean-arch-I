@@ -2,6 +2,7 @@ package org.douggo;
 
 import java.util.Objects;
 
+/* Value Object */
 public class Telefone {
 
     private String ddd;
