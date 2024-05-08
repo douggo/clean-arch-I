@@ -14,4 +14,14 @@ public class Email {
         this.address = address;
     }
 
+    public String getAddress() {
+        return address;
+    }
+
+    @Override
+    public String toString() {
+        return "Email{" +
+                "address='" + address + '\'' +
+                '}';
+    }
 }

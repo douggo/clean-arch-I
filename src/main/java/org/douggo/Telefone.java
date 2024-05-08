@@ -15,6 +15,18 @@ public class Telefone {
         this.number = number;
     }
 
+    public String getDdd() {
+        return ddd;
+    }
+
+    public String getNumber() {
+        return number;
+    }
+
+    public String getTelefoneNumber() {
+        return String.format("(%s) %s", this.ddd, this.number);
+    }
+
     private void validateDdd(String ddd) throws IllegalArgumentException {
         if (!Objects.isNull(ddd) && ddd.matches("\\d{2}")) {
             return;
@@ -29,4 +41,11 @@ public class Telefone {
         throw new IllegalArgumentException("Telefone number doesn`t meet the requirements!");
     }
 
+    @Override
+    public String toString() {
+        return "Telefone{" +
+                "ddd='" + ddd + '\'' +
+                ", number='" + number + '\'' +
+                '}';
+    }
 }
