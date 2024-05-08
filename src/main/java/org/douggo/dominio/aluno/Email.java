@@ -1,4 +1,4 @@
-package org.douggo;
+package org.douggo.dominio.aluno;
 
 import java.util.Objects;
 

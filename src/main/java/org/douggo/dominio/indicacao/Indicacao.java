@@ -1,4 +1,6 @@
-package org.douggo;
+package org.douggo.dominio.indicacao;
+
+import org.douggo.dominio.aluno.Aluno;
 
 import java.time.LocalDateTime;
 
