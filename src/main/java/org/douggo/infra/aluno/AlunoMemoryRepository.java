@@ -5,11 +5,12 @@ import org.douggo.dominio.aluno.AlunoRepository;
 import org.douggo.dominio.aluno.CPF;
 import org.douggo.infra.aluno.exceptions.AlunoNotFoundException;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class AlunoMemoryRepository implements AlunoRepository {
 
-    private List<Aluno> table;
+    private final List<Aluno> table = new ArrayList<>();
 
     @Override
     public void matricular(Aluno aluno) {
